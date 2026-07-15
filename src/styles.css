@@ -553,11 +553,15 @@
     }
 
     .copy {
-      @apply p-1 text-text-muted opacity-0 transition-opacity hover:text-white;
+      @apply p-1 text-text-muted opacity-0 transition-opacity hover:text-black;
     }
 
     &:hover .copy {
       @apply opacity-100;
+    }
+
+    .copy.is-copied {
+      @apply opacity-100 text-green-500 hover:text-green-500;
     }
 
     .footer {
